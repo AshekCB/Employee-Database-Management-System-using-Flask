@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Redirect Example</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-image: url("https://wallpaper.forfun.com/fetch/d4/d4a5fd80dc9de0d49ddaf15269af1ec7.jpeg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+</style>
+
+
+</head>
+<body>
+    <center>
+<br><br><br><br><br><br>
+        <b><h1><i><u>EMPLOYEE DATABASE MANAGEMENT SYSTEM</u></i></h1></b>
+        <br><br>
+        <button onclick="window.location.href='{{ url_for('insert') }}'">Insert</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <button onclick="window.location.href='{{ url_for('delete') }}'">Delete</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <button onclick="window.location.href='{{ url_for('update') }}'">Update</button>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <button onclick="window.location.href='{{ url_for('display') }}'">Display</button>
+    </center>
+    </body>
+    </html>

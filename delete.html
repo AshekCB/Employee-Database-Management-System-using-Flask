@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Deletion</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-image: url("https://i.pinimg.com/originals/a6/e7/46/a6e7468371ba3b3c3dc212b3ef54cd9c.jpg");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1, h2 {
+            text-align: center;
+            text-decoration-color: darkblue;
+        }
+
+        form {
+            width: 300px;
+            text-align: center;
+        }
+
+        label, input {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <h1><u><i>EMPLOYEE DATA DELETION</i></u></h1>
+    <h2>
+        <form action="" method="POST">
+            <label for="eid">Enter Employee Id:</label>
+            <input type="number" id="eid" name="eid" required placeholder="Enter Your Eid">
+            
+            <button type="submit">DELETE</button>
+        </form>
+    </h2>
+    {% if result %}
+        <h1>{{ result }}</h1>
+    {% endif %}
+</body>
+
+</html>
